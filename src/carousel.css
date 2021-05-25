@@ -1,0 +1,51 @@
+.Carousel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.Carousel > div {
+  margin: 50px;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  align-self: center;
+  min-width: 50%;
+  max-width: 50%;
+  flex: 0 0 auto;
+  text-align: center;
+}
+.Carousel_btn {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.Carousel_btn a {
+  background-color: lightblue;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  margin: 0 1em;
+}
+.Carousel-ref {
+  justify-self: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.Carousel-ref > div {
+  align-self: center;
+  border: 1px solid black;
+  height: 200px;
+  width: 50vw;
+  flex: 0 0 auto;
+  text-align: center;
+}

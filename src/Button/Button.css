@@ -1,0 +1,31 @@
+.Button {
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 6vw;
+  margin: 5vw;
+  padding: 0.5em 0.75em;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.Button__primary {
+  background: transparent
+    linear-gradient(98deg, #40b1ba 0%, rgb(102, 224, 212) 100%) 0% 0% no-repeat;
+  border: none;
+  color: white;
+}
+.Button__primary:hover {
+  background: transparent linear-gradient(98deg, #40b1ba 0%, #40b1ba, 100%) 0%
+    0% no-repeat;
+}
+.Button__secondary {
+  color: black;
+  border: 2px solid #40b1ba;
+}
+.Button__secondary:hover {
+  background-color: #40b1ba;
+  color: white;
+}

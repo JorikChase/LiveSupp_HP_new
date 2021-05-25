@@ -1,0 +1,160 @@
+:root {
+  --font: "Rubik", sans-serif;
+  --spacing: 10px;
+}
+
+.App {
+  font-family: var(--font);
+  text-align: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 8vw;
+  margin: 5vw;
+}
+p {
+  font-size: 5vw;
+  margin: 5vw;
+}
+.toplook {
+  padding-top: 10vw;
+}
+
+.toplook img {
+  margin-top: 30;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+}
+.app {
+  font-family: var(--font);
+}
+.section_image {
+  align-content: center;
+}
+.clients_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 30px 0 30px;
+  background-color: rgb(255, 246, 246);
+}
+.clients_items a img {
+  display: block;
+  height: 40px;
+  filter: saturate(0);
+  transition: filter 0.3s ease-in-out;
+}
+.clients_items a:hover img {
+  filter: saturate(1);
+}
+
+.circlesUL {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.circlesUL li {
+  margin: 1em 0;
+}
+
+.circlesUL .PercentageCircles {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+  margin-left: 5vw;
+  width: 2em;
+  height: 2em;
+}
+
+.communication {
+  background-color: #ffefef;
+  padding: 4vw;
+}
+
+.communicationUL li {
+  list-style-type: none;
+  position: relative;
+}
+
+.communicationUL li::after {
+  content: "";
+  position: absolute;
+  left: -2em;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  background-color: #40b1ba;
+}
+
+.effectivity_img {
+  width: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.happinessUL li {
+  list-style-type: none;
+  position: relative;
+}
+
+.happinessUL li::after {
+  content: "";
+  position: absolute;
+  left: -2em;
+  top: 0;
+  width: 1.25em;
+  height: 1.25em;
+  background: transparent url(/tick.png) center center / contain no-repeat;
+}
+
+.communicationUL li {
+  list-style-type: none;
+  position: relative;
+}
+
+.communicationUL li::after {
+  content: "";
+  position: absolute;
+  left: -2em;
+  top: 0;
+  width: 1.25em;
+  height: 1.25em;
+  background: transparent url(/tick.png) center center / contain no-repeat;
+}
+
+.footerSection {
+  background: rgb(255, 246, 246);
+  padding: 30px;
+}
+.footerSection p {
+  background: rgb(255, 246, 246);
+  font-size: 1em;
+}
+
+@media (min-width: 900px) {
+  .circlesUL {
+    display: flex;
+    flex-direction: row;
+  }
+  .circlesUL li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .circlesUL .PercentageCircles {
+    width: 6em;
+    height: 6em;
+    margin-bottom: 1em;
+  }
+}
